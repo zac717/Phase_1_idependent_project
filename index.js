@@ -8,7 +8,7 @@ async function getISS() {
 
    // L.marker([location, longitude]).addTo(myMap);
 marker.setLatLng([latitude, longitude])
-myMap.setView([latitude, longitude], 2.5)
+myMap.setView([latitude, longitude], 2)
     document.getElementById('lat').textContent = latitude;
     document.getElementById('lon').textContent = longitude
 }
