@@ -8,6 +8,7 @@ async function getISS() {
 
    // L.marker([location, longitude]).addTo(myMap);
 marker.setLatLng([latitude, longitude])
+myMap.setView([latitude, longitude], 2.5)
     document.getElementById('lat').textContent = latitude;
     document.getElementById('lon').textContent = longitude
 }
@@ -28,3 +29,5 @@ const attribution =
 const tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
 const tiles = L.tileLayer(tileUrl, {attribution});
 tiles.addTo(myMap)
+
+setInterval(getISS, 1000)
